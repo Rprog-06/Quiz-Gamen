@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="pract8.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz Game</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="options-container">
+                <button class="option-btn" onclick="checkAnswer(0)">Option 1</button>
+                <button class="option-btn" onclick="checkAnswer(1)">Option 2</button>
+                <button class="option-btn" onclick="checkAnswer(2)">Option 3</button>
+                <button class="option-btn" onclick="checkAnswer(3)">Option 4</button>
+            </div>
+        </div>
+        <p id="score-display">Score: 0</p>
+        
+       
+        <button id="next-question-btn" onclick="loadNextQuestion()">Next Question</button>
+        <button class="restart" >Restart Quiz</button>
+    
+    </div>
+    
+   
+
+    <script src="pract8.js"></script>
+</body>
+</html>
